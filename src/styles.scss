@@ -9,7 +9,6 @@ html, body {
 }
 .header {
     min-height: 50px;
-    border : 1px solid;
     margin: 5px;
     background-color: purple;
     text-align: center;
@@ -20,7 +19,6 @@ html, body {
 }
 .footer {
     min-height: 50px;
-    border : 1px solid;
     margin: 5px;
     background-color: purple;
     text-align: center;
@@ -31,9 +29,9 @@ html, body {
 }
 .content {
     min-height: calc(100vh - 80px);
-    border: 1px;
     background-color: rgb(191, 181, 191);
     display: block;
+    padding: 8px;
 
 }
 div.cart {
@@ -42,8 +40,13 @@ div.cart {
 }
 .cart img {
     height: 30px;
-    width: 20px;
+    width: 30px;
+    margin: 2px;
 }
 .product {
-    
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 300px;
 }
+
