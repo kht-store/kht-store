@@ -32,7 +32,14 @@ html, body {
     background-color: rgb(191, 181, 191);
     display: block;
     padding: 8px;
-
+    text-align: center;
+    .product {
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 300px;
+        
+    }
 }
 div.cart {
     float: right;
@@ -43,10 +50,5 @@ div.cart {
     width: 30px;
     margin: 2px;
 }
-.product {
-    display: inline-block;
-    margin-left: 5px;
-    margin-top: 5px;
-    width: 300px;
-}
+
 
