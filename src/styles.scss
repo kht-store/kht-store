@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeflex/primeflex.css";
+@import "primeicons/primeicons.css";
+
+html, body {
+    height: 100%;
+    margin: 5px;
+}
+.header {
+    min-height: 50px;
+    border : 1px solid;
+    margin: 5px;
+    background-color: purple;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+.footer {
+    min-height: 50px;
+    border : 1px solid;
+    margin: 5px;
+    background-color: purple;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+.content {
+    min-height: calc(100vh - 80px);
+    border: 1px;
+    background-color: rgb(191, 181, 191);
+    display: block;
+
+}
+div.cart {
+    float: right;
+    margin-right: 3px;
+}
+.cart img {
+    height: 30px;
+    width: 20px;
+}
+.product {
+    
+}
