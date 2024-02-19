@@ -1,7 +1,7 @@
 {
     "productos": [
-        {"id":1, "nombre": "Proucto1", "descripcion": "descripción", "precio":100, "imagen": ""},
-        {"id":1, "nombre": "Proucto2", "descripcion": "descripción", "precio":150, "imagen": ""},
-        {"id":1, "nombre": "Proucto3", "descripcion": "descripción", "precio":200, "imagen": ""}
+        {"id":1, "nombre": "T-rex", "descripcion": "T-rex animado", "precio":100, "imagen": ""},
+        {"id":1, "nombre": "Águila", "descripcion": "Águila real 2D", "precio":150, "imagen": ""},
+        {"id":1, "nombre": "Manzana", "descripcion": "Manzana roja 3D", "precio":200, "imagen": ""}
     ]
 }
