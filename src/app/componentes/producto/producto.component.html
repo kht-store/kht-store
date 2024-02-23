@@ -1,13 +1,22 @@
-<p-card header="{{producto?.nombre | titlecase }}" [style]="{ width: '' }">
+<p-card header="{{producto?.nombre | uppercase }}" [style]="{ width: '' }">
     <ng-template pTemplate="header">
         <img alt="Cardimg" *ngIf="producto?.imagen" [src]="producto?.imagen" class="imagen-card"/>
     </ng-template>
     <p>
         {{producto?.descripcion }}
     </p>
+    <p>
+        {{producto?.modelo | titlecase }}
+    </p>
+    <p>
+        {{producto?.tipo | titlecase }}
+    </p>
+    <p>
+        {{producto?.formato }}
+    </p>
     <span>{{producto?.precio | currency }}</span>
     <ng-template pTemplate="footer">
-        <p-button label="Comprar" icon="pi pi-cart-plus"></p-button>
+        <p-button (onClick)="add()" label="Comprar" icon="pi pi-cart-plus"></p-button>
     </ng-template>
 </p-card>
   

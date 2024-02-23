@@ -12,6 +12,7 @@ import { FooterComponent } from './componentes/plantillas/footer/footer.componen
 import { HeaderComponent } from './componentes/plantillas/header/header.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { ProductosModule } from './modulos/productos/productos.module';
+import { ProductosService } from './servicios/productos.service';
 
 
 @NgModule({
@@ -40,4 +41,8 @@ import { ProductosModule } from './modulos/productos/productos.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private sevice:ProductosService){
+    localStorage.setItem('cart', JSON.stringify([]))
+  }
+}

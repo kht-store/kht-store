@@ -1,10 +1,8 @@
-export interface Producto {
+export interface CartProducto {
     id: number;
     nombre: string;
     descripcion: string;
-    modelo: string;
-    tipo: string;
-    formato: string;
     precio: number;
     imagen: string;
+    cantidad: number;
 }
