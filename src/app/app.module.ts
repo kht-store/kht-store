@@ -13,13 +13,15 @@ import { HeaderComponent } from './componentes/plantillas/header/header.componen
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { ProductosModule } from './modulos/productos/productos.module';
 import { ProductosService } from './servicios/productos.service';
+import { DialogService } from 'primeng/dynamicdialog';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { ProductosService } from './servicios/productos.service';
   ],
   providers: [
     MessageService,
+    DialogService,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]

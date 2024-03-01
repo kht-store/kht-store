@@ -7,7 +7,11 @@ import { CartProducto } from '../../modelos/cart-producto';
   templateUrl: './producto.component.html',
   styleUrl: './producto.component.scss'
 })
+
 export class ProductoComponent {
+getSeverity(_t9: any) {
+throw new Error('Method not implemented.');
+}
   @Input() producto?: Producto;
   cart: CartProducto[] = []
 

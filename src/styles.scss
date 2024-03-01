@@ -31,20 +31,8 @@ html, body {
     min-height: calc(100vh - 80px);
     background-color: rgb(191, 181, 191);
     display: block;
-    padding: 8px;
+    padding: 12px;
     text-align: center;  
-    .producto {
-        display: inline-block;
-        margin-left: 5px;
-        margin-top: 5px;
-        width: 300px;
-        margin-left: 20px;
-        .imagen-card {
-            width: 75%;
-            height: 200px;
-            margin-top: 10px;
-        }      
-    }
 }
 div.cart {
     float: right;
