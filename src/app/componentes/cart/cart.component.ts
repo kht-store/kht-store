@@ -3,7 +3,10 @@ import { CartProducto } from '../../modelos/cart-producto';
 import { ProductosListaComponent } from '../productos-lista/productos-lista.component';
 import { CartService } from '../../servicios/cart.service';
 
-
+interface Colum {
+  field: string;
+  header: string;
+}
 
 @Component({
   selector: 'app-cart',
@@ -18,5 +21,9 @@ export class CartComponent implements OnInit {
     this.cartService.carrito$.subscribe((nuevoCarrito) => {
       this.carrito = nuevoCarrito
     });
+  }
+
+  calcularTotal(): number{
+    return this.carrito.reduce((total, producto) => total + producto.precio * producto.cantidad, 0);
   }
 }
